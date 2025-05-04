@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>GA Refrigerações | Manutenção de Ar-Condicionado</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      .hero-bg {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url("https://images.unsplash.com/photo-1600566752227-8f3b1a2a3e0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+        background-size: cover;
+        background-position: center;
+      }
+      .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+      }
+      .floating-btn {
+        animation: float 3s ease-in-out infinite;
+      }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+    </style>
+  </head>
+  <body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="fixed w-full bg-blue-800 text-white z-50 shadow-lg">
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <i class="fas fa-snowflake text-2xl text-blue-300 mr-3"></i>
+            <h1 class="text-2xl font-bold">
+              GA <span class="text-blue-300">Refrigerações</span>
+            </h1>
+          </div>
+          <nav class="hidden md:flex space-x-8">
+            <a href="index.htm" class="hover:text-blue-300 transition">Home</a>
+            <a href="services.html" class="hover:text-blue-300 transition"
+              >Serviços</a
+            >
+            <a href="sobre.html" class="hover:text-blue-300 transition"
+              >Sobre</a
+            >
+            <a href="contato.html" class="hover:text-blue-300 transition"
+              >Contato</a
+            >
+          </nav>
+          <a
+            href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20agendar%20um%20serviço"
+            target="_blank"
+            class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full transition"
+          >
+            <i class="fab fa-whatsapp mr-2"></i> Agendar
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="hero-bg flex items-center justify-center text-white pt-24 pb-20"
+    >
+      <div class="container mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+          Manutenção Profissional de Ar-Condicionado
+        </h1>
+        <p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto">
+          Serviços especializados com garantia e os melhores preços do mercado.
+          Atendimento 24h para emergências!
+        </p>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+          <a
+            href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20agendar%20um%20serviço"
+            target="_blank"
+            class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105"
+          >
+            <i class="fas fa-calendar-alt mr-2"></i> Agendar Visita
+          </a>
+          <a
+            href="services.html"
+            class="bg-white hover:bg-gray-100 text-blue-800 font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105"
+          >
+            Nossos Serviços
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-blue-800">
+            Nossos Serviços
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Manutenção completa para todos os tipos e marcas de ar-condicionado
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Serviço 1 -->
+          <div
+            class="bg-white rounded-xl shadow-lg service-card transition duration-500 p-6 border border-gray-200"
+          >
+            <div class="text-blue-600 text-4xl mb-4">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-blue-800">
+              Manutenção Preventiva
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Limpeza completa e revisão do sistema para evitar falhas.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-700">
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-500 mr-2"></i> Limpeza de
+                filtros
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-500 mr-2"></i> Verificação de
+                gás
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-500 mr-2"></i> Lubrificação de
+                peças
+              </li>
+            </ul>
+            <div class="text-center">
+              <span class="text-2xl font-bold text-blue-800">R$ 120</span>
+              <p class="text-sm text-gray-500">por unidade</p>
+            </div>
+            <a
+              href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20manutenção%20preventiva"
+              target="_blank"
+              class="block mt-4 bg-blue-100 hover:bg-blue-200 text-blue-800 font-bold py-2 px-4 rounded text-center transition"
+            >
+              Agendar
+            </a>
+          </div>
+
+          <!-- Serviço 2 -->
+          <div
+            class="bg-white rounded-xl shadow-lg service-card transition duration-500 p-6 border border-gray-200"
+          >
+            <div class="text-blue-600 text-4xl mb-4">
+              <i class="fas fa-fire-extinguisher"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-blue-800">
+              Reparo Emergencial
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Conserto rápido para problemas inesperados.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-700">
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-500 mr-2"></i> Vazamento de
+                gás
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-500 mr-2"></i> Falha elétrica
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-500 mr-2"></i> Troca de peças
+              </li>
+            </ul>
+            <div class="text-center">
+              <span class="text-2xl font-bold text-blue-800">R$ 200</span>
+              <p class="text-sm text-gray-500">visita técnica</p>
+            </div>
+            <a
+              href="https://wa.me/5511999999999?text=Olá,%20preciso%20de%20um%20reparo%20emergencial%20no%20ar-condicionado"
+              target="_blank"
+              class="block mt-4 bg-blue-100 hover:bg-blue-200 text-blue-800 font-bold py-2 px-4 rounded text-center transition"
+            >
+              Chamar Urgente
+            </a>
+          </div>
+
+          <!-- Serviço 3 -->
+          <div
+            class="bg-white rounded-xl shadow-lg service-card transition duration-500 p-6 border border-gray-200"
+          >
+            <div class="text-blue-600 text-4xl mb-4">
+              <i class="fas fa-compress-arrows-alt"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-blue-800">Instalação</h3>
+            <p class="text-gray-600 mb-4">
+              Instalação profissional de novos equipamentos.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-700">
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-500 mr-2"></i> Split, janela
+                ou piso-teto
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-500 mr-2"></i> Tubulação e
+                dreno
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-check text-green-500 mr-2"></i> Teste de
+                funcionamento
+              </li>
+            </ul>
+            <div class="text-center">
+              <span class="text-2xl font-bold text-blue-800"
+                >A partir de R$ 350</span
+              >
+              <p class="text-sm text-gray-500">instalação completa</p>
+            </div>
+            <a
+              href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20orçamento%20para%20instalação%20de%20ar-condicionado"
+              target="_blank"
+              class="block mt-4 bg-blue-100 hover:bg-blue-200 text-blue-800 font-bold py-2 px-4 rounded text-center transition"
+            >
+              Solicitar Orçamento
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-blue-800">
+              Sobre a GA Refrigerações
+            </h2>
+            <p class="text-gray-700 mb-4">
+              Há mais de 10 anos no mercado, somos especialistas em manutenção e
+              instalação de sistemas de ar-condicionado. Nossa equipe técnica é
+              certificada pelas principais marcas do mercado.
+            </p>
+            <p class="text-gray-700 mb-6">
+              Trabalhamos com agilidade, transparência e garantia em todos os
+              serviços prestados. Atendemos residências, comércios e indústrias.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <div class="bg-white p-4 rounded-lg shadow-sm flex items-center">
+                <i class="fas fa-check-circle text-green-500 text-2xl mr-3"></i>
+                <span>Garantia de 90 dias</span>
+              </div>
+              <div class="bg-white p-4 rounded-lg shadow-sm flex items-center">
+                <i class="fas fa-clock text-blue-500 text-2xl mr-3"></i>
+                <span>Atendimento 24h</span>
+              </div>
+              <div class="bg-white p-4 rounded-lg shadow-sm flex items-center">
+                <i class="fas fa-medal text-yellow-500 text-2xl mr-3"></i>
+                <span>Certificação Inmetro</span>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-xl overflow-hidden shadow-xl">
+            <img
+              src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2574&q=80"
+              alt="Técnico da GA Refrigerações"
+              class="w-full h-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-20 bg-blue-800 text-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Entre em Contato</h2>
+          <p class="text-xl max-w-2xl mx-auto">
+            Estamos prontos para atender sua necessidade
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- WhatsApp -->
+          <div
+            class="bg-blue-700 p-8 rounded-xl text-center hover:bg-blue-600 transition"
+          >
+            <div class="text-4xl mb-4 text-green-300">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">WhatsApp</h3>
+            <p class="mb-4">Atendimento rápido via mensagem</p>
+            <a
+              href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20informações%20sobre%20serviços%20de%20ar-condicionado"
+              target="_blank"
+              class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full transition"
+            >
+              Chamar no WhatsApp
+            </a>
+          </div>
+
+          <!-- Telefone -->
+          <div
+            class="bg-blue-700 p-8 rounded-xl text-center hover:bg-blue-600 transition"
+          >
+            <div class="text-4xl mb-4 text-blue-300">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Telefone</h3>
+            <p class="text-2xl font-bold mb-4">(11) 9999-9999</p>
+            <p>Atendimento 24 horas</p>
+          </div>
+
+          <!-- Redes Sociais -->
+          <div
+            class="bg-blue-700 p-8 rounded-xl text-center hover:bg-blue-600 transition"
+          >
+            <div class="text-4xl mb-4 text-pink-300">
+              <i class="fas fa-hashtag"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Redes Sociais</h3>
+            <div class="flex justify-center space-x-4 mt-6">
+              <a href="#" class="text-2xl hover:text-blue-300 transition"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="text-2xl hover:text-pink-400 transition"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-2xl hover:text-blue-400 transition"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mapa -->
+    <section class="bg-white">
+      <div class="container mx-auto px-6">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.876830784041!2d-46.66498592470392!3d-23.54091566005026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57bc513b0395%3A0xf8caecd88e8edbad!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1689876422934!5m2!1spt-BR!2sbr"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="rounded-xl shadow-lg"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4 flex items-center">
+              <i class="fas fa-snowflake text-blue-400 mr-2"></i>
+              GA Refrigerações
+            </h3>
+            <p class="text-gray-400">
+              Especialistas em manutenção e instalação de ar-condicionado com
+              qualidade e garantia.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-4 text-blue-400">Serviços</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="services.html"
+                  class="text-gray-400 hover:text-white transition"
+                  >Manutenção Preventiva</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-gray-400 hover:text-white transition"
+                  >Reparo Emergencial</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-gray-400 hover:text-white transition"
+                  >Instalação</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-gray-400 hover:text-white transition"
+                  >Limpeza Profunda</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-4 text-blue-400">Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="index.htm"
+                  class="text-gray-400 hover:text-white transition"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-gray-400 hover:text-white transition"
+                  >Serviços</a
+                >
+              </li>
+              <li>
+                <a
+                  href="sobre.html"
+                  class="text-gray-400 hover:text-white transition"
+                  >Sobre</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contato.html"
+                  class="text-gray-400 hover:text-white transition"
+                  >Contato</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-4 text-blue-400">Contato</h4>
+            <ul class="space-y-3 text-gray-400">
+              <li class="flex items-center">
+                <i class="fas fa-map-marker-alt text-blue-400 mr-3"></i>
+                Pará,belem
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-phone-alt text-blue-400 mr-3"></i>
+                (11) 9999-9999
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-envelope text-blue-400 mr-3"></i>
+                contato@garefrigeracoes.com.br
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500"
+        >
+          <p>&copy; 2023 GA Refrigerações. Todos os direitos reservados.</p>
+          <p class="mt-2 text-sm">
+            CNPJ: 12.345.678/0001-99 • Inscrição Estadual: 123.456.789.112
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <div class="fixed bottom-8 right-8 z-50 floating-btn">
+      <a
+        href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20agendar%20um%20serviço"
+        target="_blank"
+        class="bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-xl transition"
+      >
+        <i class="fab fa-whatsapp text-2xl"></i>
+      </a>
+    </div>
+
+    <script>
+      // Menu mobile (pode ser implementado posteriormente)
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuBtn = document.querySelector(".mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        menuBtn.addEventListener("click", function () {
+          menu.classList.toggle("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
